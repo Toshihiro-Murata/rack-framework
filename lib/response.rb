@@ -2,7 +2,7 @@ class Response
   attr_accessor :status_code, :headers, :body
 
   def initialize
-    @headers = ()
+    @headers = {}
   end
 
   def rack_response

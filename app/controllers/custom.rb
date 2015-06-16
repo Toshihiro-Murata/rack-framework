@@ -12,4 +12,11 @@ class Custom < BaseController
       response.status_code = 200
     end
   end
+
+  def test
+    Response.new.tap do |response|
+      response.body = "Test Route"
+      response.status_code = 200
+    end
+  end
 end
